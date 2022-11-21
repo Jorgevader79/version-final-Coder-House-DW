@@ -1,0 +1,902 @@
+@import "colores/_colores";
+@import "mixin/_modal";
+
+
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    min-height: 100vh;
+    grid-template-rows: 240px 40px calc(100% - 380px) 100px;
+    display: grid;
+}
+
+header {
+    background-image: url(https://us.123rf.com/450wm/studio306/studio3061603/studio306160300213/53064884-palillos-de-madera-en-el-fondo-estera-de-bamb%C3%BA-negro.jpg?ver=6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+main {
+    background-image: url(https://images.unsplash.com/photo-1617196905100-216ffe128142?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=864&q=80s);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+nav {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    background-color: $colores_navegador;
+
+
+
+}
+
+footer {
+    background-color: $colores_footer;
+    height: 100px;
+}
+
+.titulo1 {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    text-align: left;
+}
+
+.titulo2 {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-align: right;
+}
+
+.maintitulomenu {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    grid-area: a2;
+}
+
+.menuclasicos {
+    height: 400px;
+    width: 300px;
+    border-radius: 3%;
+}
+
+.clasicos {
+    grid-area: a4;
+}
+
+.menuclasicos:hover {
+
+    transform: scale(1.4);
+    transition: 2s;
+}
+
+.menuespeciales {
+    height: 400px;
+    width: 300px;
+    border-radius: 3%;
+}
+
+.menuespeciales:hover {
+
+    transform: scale(1.4);
+    transition: 2s;
+
+}
+
+.especiales {
+    grid-area: a5;
+}
+
+.menucombos {
+    height: 400px;
+    width: 300px;
+    border-radius: 3%;
+
+}
+
+.menucombos:hover {
+
+    transform: scale(1.4);
+    transition: 2s;
+
+}
+
+
+.combos {
+    grid-area: a6;
+}
+
+.maintituloa8 {
+    grid-area: a8;
+}
+
+.nav-link {
+    color: $colores_titulos;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.nav-link:hover {
+
+    color: $colores_titulos;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(25, 90%, 49%);
+    position: relative;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+
+
+
+.maintitulo1 {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    grid-area: a1;
+}
+
+.maintitulo2 {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    grid-area: a9;
+}
+
+.mainimagen2 {
+    grid-area: a6;
+}
+
+.logo {
+    border: 3px solid $colores_navegador;
+    height: 240px;
+    width: 240px;
+    border-radius: 4px;
+}
+
+.puedes {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    grid-area: a2;
+}
+
+.telefono {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    grid-area: a4;
+}
+
+.mail {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    grid-area: a6;
+}
+
+#whatsapp {
+    color: green;
+}
+
+#email {
+    color: rgba(32, 166, 228, 0.747);
+}
+
+.quienessomos {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainhistoria {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.mapacontacto {
+    height: 350px;
+    width: 500px;
+    border-radius: 3%;
+}
+
+.mapa {
+    grid-area: a8;
+}
+
+#instagram {
+    color: $colores_navegador;
+    font-size: 48px;
+}
+
+#rappi {
+    width: 50px;
+    height: 55px;
+    border-radius: 30%;
+}
+
+#pedidos {
+    width: 78px;
+    height: 78px;
+}
+
+.headergrilla {
+    display: grid;
+    grid-template-rows: 150px 70px;
+}
+
+.navgrilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.maingrilla {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 100px 300px 100px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "a1 a2 a3"
+        "a4 a5 a6"
+        "a7 a8 a9";
+}
+
+.footergrilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+.menugrilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 400px 100px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "a1  a2  a3"
+        "a4  a5  a6"
+        "a7  a8  a9";
+}
+
+
+
+.galeriagrilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 250px 240px 250px 100px;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "a1 a1 a1 a1 a1"
+        "a2 a3 a4 a5 a6"
+        "a7 a8 a9 a10 a11"
+        "a12 a13 a14 a15 a16"
+        "a17 a17 a17 a17 a17";
+}
+
+.maintitulogaleria {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    grid-area: a1;
+}
+
+.californiaroll {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a2;
+}
+
+.californiaroll:hover {
+
+    transform: translate(550px, 170px) scale(2.5);
+    border-radius: 3px;
+    transition: 2s;
+
+
+}
+
+.hotroll {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a3;
+}
+
+.hotroll:hover {
+    transform: translate(280px, 170px) scale(2.5);
+    border-radius: 3px;
+    transition: 2s;
+
+}
+
+.makiroll {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a4;
+
+}
+
+.makiroll:hover {
+
+    transform: translate(0px, 170px) scale(2.5);
+    border-radius: 3px;
+    transition: 2s;
+
+
+}
+
+.nyroll {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a5;
+}
+
+.nyroll:hover {
+
+    transform: translate(-280px, 170px) scale(2.5);
+    border-radius: 3px;
+    transition: 2s;
+
+}
+
+.smokeroll {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a6;
+}
+
+.smokeroll:hover {
+
+
+    transform: translate(550px, 90px) scale(2.5);
+    border-radius: 3px;
+    transition: 2s;
+}
+
+.tunroll {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a7;
+}
+
+.tunroll:hover {
+
+    transform: translate(280px, 90px) scale(2.5);
+    border-radius: 3px;
+    transition: 2s;
+
+}
+
+.capreroll {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a8;
+}
+
+.capreroll:hover {
+
+    transform: translate(0px, 90px) scale(2.5);
+    border-radius: 3px;
+    transition: 2s;
+
+
+}
+
+.nigiris {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a9;
+}
+
+.nigiris:hover {
+    transform: translate(-280px, 90px) scale(2.5);
+    border-radius: 3px;
+    transition: 2s;
+
+
+}
+
+.philaroll {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a10;
+}
+
+.philaroll:hover {
+
+    transform: translate(-550px, 170px) scale(2.5);
+    border-radius: 3px;
+    transition: 2s;
+
+
+}
+
+
+.ebiroll {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a11;
+}
+
+.ebiroll:hover {
+
+    transform: translate(-550px, 90px) scale(2.3);
+    border-radius: 3px;
+    transition: 2s;
+
+}
+
+.vegipromo {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a12;
+}
+
+.vegipromo:hover {
+    transform: translate(550px, -20px) scale(2.2);
+    border-radius: 3px;
+    transition: 2s;
+}
+
+.niponpromo {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a13;
+}
+
+.niponpromo:hover {
+    transform: translate(280px, -20px) scale(2.2);
+    border-radius: 3px;
+    transition: 2s;
+}
+
+
+.tokiopromo {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a14;
+}
+
+.tokiopromo:hover {
+    transform: translate(0px, -20px) scale(2.2);
+    border-radius: 3px;
+    transition: 2s;
+}
+
+
+.placepromo {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a15;
+}
+
+.placepromo:hover {
+    transform: translate(-280px, -20px) scale(2.2);
+    border-radius: 3px;
+    transition: 2s;
+}
+
+
+.frente592 {
+    height: 220px;
+    width: 220px;
+    border: 2px solid $colores_navegador;
+    grid-area: a16;
+}
+
+.maintitulogaleria2 {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    grid-area: a17;
+}
+
+.quienessomosgrilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px 250px 100px;
+    justify-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+    grid-template-areas: "a1 a1 a1"
+        "a2 a3 a4";
+}
+
+.maintituloquienes {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    grid-area: a1;
+}
+
+.mainquienes1 {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    grid-area: a2;
+    text-align: justify;
+    Background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px;
+}
+
+.mainquienes2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    grid-area: a3;
+    text-align: justify;
+    Background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px;
+}
+
+.mainquienes3 {
+    grid-area: a4;
+}
+
+.muchachos {
+    height: 260px;
+    width: 370px;
+    border-radius: 2%;
+}
+
+.historiagrilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 260px 100px;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.maintitulohistoria {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+.mainhistoria {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    text-align: justify;
+    Background-color: rgba(0, 0, 0, 0.5);
+}
+
+.maintitulohistoria2 {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+.contactogrilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 150px 80px 400px 80px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "a1 a2"
+        "a3 a4"
+        "a5 a6"
+        "a7 a8"
+        "a9 a10";
+}
+
+.maincontacto {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    grid-area: a1;
+}
+
+.maintitulocontacto {
+    color: $colores_titulos;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    grid-area: a10;
+}
+
+
+@include modal;
+
+@media (max-width: 500px) {
+
+    .happyfoto {
+
+        display: flex;
+        width: 200px;
+        height: 200px;
+        border-radius: 15%;
+        align-content: center;
+    }
+
+
+    .titulo1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .titulo2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .headergrilla {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .navgrilla {
+        grid-template-columns: none;
+        grid-template-rows: repeat(6, 1fr);
+
+
+    }
+
+    .body {
+        grid-template-rows: 240px 246px calc(100% - 586px) 100px;
+    }
+
+    .navgrilla>div {
+        margin: auto;
+        width: 100%;
+        border-bottom: 1px dashed rgb(173, 88, 19);
+
+    }
+
+
+
+    .mainquienes1 {
+        font-size: 2rem;
+        padding: 6px;
+    }
+
+    .mainquienes2 {
+        font-size: 2rem;
+        padding: 6px;
+    }
+
+    .maingrilla {
+        height: 100%;
+        grid-template-rows: none;
+        grid-template-columns: none;
+        grid-template-areas: "a1"
+            "a6"
+            "a9";
+    }
+
+    .menugrilla {
+        height: 100%;
+        grid-template-rows: none;
+        grid-template-columns: none;
+        grid-template-areas: "a2"
+            "a4"
+            "a5"
+            "a6"
+            "a8";
+        grid-row: 2rem;
+    }
+
+    .contactogrilla {
+        height: 100%;
+        grid-template-rows: none;
+        grid-template-columns: none;
+        grid-template-areas: "a1" "a2"
+            "a4"
+            "a6"
+            "a10";
+
+    }
+
+    .maincontacto {
+
+        text-align: center;
+        font-size: 70px;
+
+    }
+
+
+    .telefono {
+        text-align: center;
+        font-size: 30px;
+        padding: 4px;
+    }
+
+
+    .mail {
+        text-align: center;
+        font-size: 30px;
+        padding: 4px;
+    }
+
+    .galeriagrilla {
+        height: 100%;
+        grid-template-rows: none;
+        grid-template-columns: none;
+        grid-template-areas: "a1" "a2"
+            "a3"
+            "a4"
+            "a5"
+            "a6"
+            "a7"
+            "a8"
+            "a9"
+            "a10"
+            "a11"
+            "a12"
+            "a13"
+            "a14"
+            "a15"
+            "a16"
+            "a17";
+    }
+
+    .quienessomosgrilla {
+        height: 100%;
+        grid-template-rows: none;
+        grid-template-columns: none;
+        grid-template-areas: "a1" "a2"
+            "a3" "a4";
+        grid-row: 3rem;
+    }
+
+    .historiagrilla {
+        height: 100%;
+        grid-template-rows: none;
+        grid-template-columns: none;
+        grid-template-areas: "a1" "a2"
+            "a3";
+        grid-row: 3rem;
+    }
+
+    .menuclasicos:hover {
+
+        display: none;
+    }
+
+    .menuespeciales:hover {
+
+        display: none;
+    }
+
+
+    .menucombos:hover {
+
+        display: none;
+    }
+
+    .californiaroll:hover {
+
+        display: none;
+    }
+
+    .capreroll:hover {
+
+        display: none;
+
+    }
+
+    .ebiroll:hover {
+
+
+        display: none;
+    }
+
+    .hotroll:hover {
+
+
+        display: none;
+    }
+
+    .makiroll:hover {
+
+        display: none;
+
+
+    }
+
+    .nigiris:hover {
+
+        display: none;
+    }
+
+    .tunroll:hover {
+
+        display: none;
+
+
+    }
+
+    .nyroll:hover {
+
+        display: none;
+    }
+
+    .philaroll:hover {
+
+        display: none;
+    }
+
+
+    .smokeroll:hover {
+
+        display: none;
+    }
+
+    .mapacontacto {
+
+        display: none;
+    }
+
+    .puedes {
+
+        text-align: center;
+        font-size: 40px;
+        padding: 4px;
+
+
+
+
+    }
+
+    .logo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .maintitulo1 {
+
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .maintitulohistoria {
+
+        font-size: 40px;
+        text-align: center;
+}
+    .nav-link{
+
+        font-size: 33.5px;
+
+
+    }
+}
